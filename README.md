@@ -2,13 +2,13 @@
 This project comprises of all the files created and generated to accomplish the MAYD spacebeacon challenge
 
 # Contents:
-spacebeacon_docker_files: All files used to create docker image.
-spacebeacon_helm_charts: Charts created for spacebeacon kubernetes deployment.
-spacebeacon_terraform_scripts: Terraform scripts to create the infrastructure on AWS.
-sample_screenshots: Screenshots taken for validations during tasks.
-README.md: Project Descriptions and Overview.
-config: kubeconfig file generated after cluster creation
-spacebeacon_report_docx: A word document listing Journey Logs, Issues Overview, Thoughts, etc.
+- spacebeacon_docker_files: All files used to create docker image. Docker image can be pulled from the dockerhub repository: bshreya639/spacebeacon:1.0
+- spacebeacon_helm_charts: Charts created for spacebeacon kubernetes deployment.
+- spacebeacon_terraform_scripts: Terraform scripts to create the infrastructure on AWS.
+- sample_screenshots: Screenshots taken for validations during tasks.
+- README.md: Project Descriptions and Overview.
+- config: kubeconfig file generated after cluster creation
+- spacebeacon_report_docx: A word document listing Journey Logs, Issues Overview, Thoughts, etc.
 
 # Instructions to execute terraform scripts:
 Recommended to configure an aws profile before commencing terraform tasks.

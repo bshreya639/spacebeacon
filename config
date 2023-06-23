@@ -1,0 +1,32 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUMvakNDQWVhZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJek1EWXlNakU0TkRFd01Wb1hEVE16TURZeE9URTROREV3TVZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBS3BmCmlqZEV4WTV0YkVrYWVRREMrUFBYOVdiQVh4SnhYaGZjdUdvQXRIQ0o0NHl1bmwrMUNLL0RnSmFHTWE1VTBZcnUKOFlGY3lzUzV3SGZIQUM2dXFkUmdPU0FINlBESERYYzZ3OXczV3JBRXNRUk8xTmdwMXJRQXNYN1B6ZXVic3RadworVEdpbGJZTTVtZTMrU2YzdytLM0d4djI4V2N2T3YvOUEybW9PTU9FNmZUYkxOK0d6QlQ3KzJOZERBc2QxTXZNCjFZbU1HTEkva0tGT3FVY0NZWXpOQmlIMHJ4SkhyTk55SllMVzAzdW5LTXB5NXc2RUlBaTh4QVkxb3NscytXTUoKRW9iSkYxTkZYck8xK2xSSjNvWTZJK3U1RjFhd2plQ0t6YWpYZWpqZ3Joa3IxbmlqelkweTZISldKaXh6MHBpQQptV0E0KzJneTFDSmZ5aTl1Zk5NQ0F3RUFBYU5aTUZjd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZPb2NBMFExNDBneHU5Wk5MOXFxK3J0dlhlditNQlVHQTFVZEVRUU8KTUF5Q0NtdDFZbVZ5Ym1WMFpYTXdEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBQW9rMk45cVpXTW5MR0xYUktUZgpvNmlnRi83djk3RzlTTHVMWU5xK3kzbGFsOVQzL3lTR1hMNWdnMUxTRGdGTmcyWGhpOS8waWhHMUN0cDZ1NkpECk5lakpjZlkvN3UxUGxhSVk5SXZiQWluMHdQSU1DaEV5T2tlVDBIRWI4ZnlibUdGTmdWUk04OVNWRngvaDVtaTAKV25FM0JCMy9VTTB4dGhLaENZanoySVhELzVrQzNvc0dxR0xvY0Q1eWNMaTV5UGRtQnkrd25uUURheW5LclNybQpCajdESEtkN0MxYlJITGF0MmJCNFhZZjFJMDRveXM2RzNOTXNMTE1KcTZPU2NxLzR2Z2Q5Tm5KL2hFQU51LzhQCkJRdnBNUlhBV0hweE5OeGFFMHJjeUJTeVJ2bFNXbFBadGliRzUwZTRFenN1ZEkvcEF6MzhmZkRRQUpBU3p1NFoKM2VBPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://33A25857F99C5BE9522824A4DE9896AB.gr7.eu-central-1.eks.amazonaws.com
+  name: arn:aws:eks:eu-central-1:313115713694:cluster/eks
+contexts:
+- context:
+    cluster: arn:aws:eks:eu-central-1:313115713694:cluster/eks
+    user: arn:aws:eks:eu-central-1:313115713694:cluster/eks
+  name: arn:aws:eks:eu-central-1:313115713694:cluster/eks
+current-context: arn:aws:eks:eu-central-1:313115713694:cluster/eks
+kind: Config
+preferences: {}
+users:
+- name: arn:aws:eks:eu-central-1:313115713694:cluster/eks
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1beta1
+      args:
+      - --region
+      - eu-central-1
+      - eks
+      - get-token
+      - --cluster-name
+      - eks
+      - --output
+      - json
+      command: aws
+      env:
+      - name: AWS_PROFILE
+        value: terraform

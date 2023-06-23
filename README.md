@@ -15,9 +15,11 @@ Recommended to configure an aws profile before commencing terraform tasks.
 
 1. Execute: terraform init
 2. The files should be planned and applied in the following order (to avoid errors). Execute the following commands after every file is placed in the project
+   ```
    terraform fmt
    terraform plan
    terraform apply
+   ```
 
 files:   
 provider.tf

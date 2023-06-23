@@ -21,16 +21,16 @@ Recommended to configure an aws profile before commencing terraform tasks.
    terraform apply
    ```
 
-files:   
-provider.tf
-vpc.tf
-subnet.tf
-internet-gateway.tf
-eips.tf
-nat-gateway.tf
-routing-tables.tf
-route-table-association.tf
-eks.tf
-eks-node-groups.tf
+   Files:   
+   1. provider.tf
+   2. vpc.tf
+   3. subnet.tf
+   4. internet-gateway.tf
+   5. eips.tf
+   6. nat-gateway.tf
+   7. routing-tables.tf
+   8. route-table-association.tf
+   9. eks.tf
+   10. eks-node-groups.tf
 
 
